@@ -1,0 +1,10 @@
+const generateKeyError = new Error("Can't generate key from function argument")
+
+// Generate key value according to parameters
+export default function generateKey(argument: any[]): string {
+  try{
+    return `${Array.from(argument).join(',')}`
+  }catch(_) {
+    throw generateKeyError
+  }
+}
