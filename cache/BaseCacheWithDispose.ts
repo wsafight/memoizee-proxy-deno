@@ -1,5 +1,5 @@
-import { DisposeFun, MemoizeCache } from "../interface";
-import BaseCache from "./BaseCache";
+import { DisposeFun, MemoizeCache } from "../interface.ts";
+import BaseCache from "./BaseCache.ts";
 
 export const defaultDispose: DisposeFun<any> = () => void 0
 

@@ -1,6 +1,6 @@
-import ExpiredCacheItem from "./ExpiredCacheItem";
-import { CacheMap, DisposeFun, MemoizeCache } from "../interface";
-import BaseCacheWithDispose from "./BaseCacheWithDispose";
+import ExpiredCacheItem from "./ExpiredCacheItem.ts";
+import { CacheMap, DisposeFun, MemoizeCache } from "../interface.ts";
+import BaseCacheWithDispose from "./BaseCacheWithDispose.ts";
 
 interface QuickLRUOptions<V> {
   max?: number;

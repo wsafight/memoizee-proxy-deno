@@ -1,9 +1,9 @@
-import { MemoizeCache, MemoizeOptions, ResultFun, TargetFun } from "./interface";
-import generateKey from "./utils/generateKey";
-import checkOptionsThenThrowError from "./checkOptions";
-import getCacheByOptions from "./getCacheByOptions";
-import getManualActionObjFormCache from "./getManualActionObjFormCache";
-import invariant from "./utils/inveriant";
+import { MemoizeCache, MemoizeOptions, ResultFun, TargetFun } from "./interface.ts";
+import generateKey from "./utils/generateKey.ts";
+import checkOptionsThenThrowError from "./checkOptions.ts";
+import getCacheByOptions from "./getCacheByOptions.ts";
+import getManualActionObjFormCache from "./getManualActionObjFormCache.ts";
+import invariant from "./utils/inveriant.ts";
 
 function getKeyFromArguments(argsList: any[], normalizer: (args: any[]) => string, weak: boolean = false): object | string {
   return weak ? argsList[0] as object : normalizer(argsList)

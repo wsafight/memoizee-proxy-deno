@@ -1,8 +1,8 @@
-import { MemoizeCache, MemoizeOptions } from "./interface";
-import ExpiredLRUCache from "./cache/ExpiredLRUCache";
-import RefCache from "./cache/RefCache";
-import Cache from "./cache/Cache";
-import ExpiredLFUCache, { QuickLFUOptions } from "./cache/ExpiredLFUCache";
+import { MemoizeCache, MemoizeOptions } from "./interface.ts";
+import ExpiredLRUCache from "./cache/ExpiredLRUCache.ts";
+import RefCache from "./cache/RefCache.ts";
+import Cache from "./cache/Cache.ts";
+import ExpiredLFUCache, { QuickLFUOptions } from "./cache/ExpiredLFUCache.ts";
 
 export default function getCacheByOptions<V>(options?: MemoizeOptions<V>): MemoizeCache<V> {
   if (!options) {

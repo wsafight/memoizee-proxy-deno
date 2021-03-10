@@ -1,5 +1,5 @@
-import { CacheMap, DisposeFun, MemoizeCache } from "../interface";
-import BaseCacheWithDispose from "./BaseCacheWithDispose";
+import { CacheMap, DisposeFun, MemoizeCache } from "../interface.ts";
+import BaseCacheWithDispose from "./BaseCacheWithDispose.ts";
 
 export default class RefCache<V> extends BaseCacheWithDispose<V, V> implements CacheMap<string | object, V> {
   cacheRef: MemoizeCache<number>

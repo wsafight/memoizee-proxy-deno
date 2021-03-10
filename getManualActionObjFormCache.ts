@@ -1,4 +1,4 @@
-import { CacheMap, MemoizeCache } from "./interface";
+import { CacheMap, MemoizeCache } from "./interface.ts";
 
 /**
  * Get the function that can manage the cache manually

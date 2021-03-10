@@ -1,5 +1,5 @@
-import BaseCacheWithDispose from "./BaseCacheWithDispose";
-import { CacheMap, DisposeFun } from "../interface";
+import BaseCacheWithDispose from "./BaseCacheWithDispose.ts";
+import { CacheMap, DisposeFun } from "../interface.ts";
 
 export interface QuickLFUOptions<V> {
   capacity?: number;

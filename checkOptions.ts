@@ -1,5 +1,5 @@
-import invariant from "./utils/inveriant";
-import { MemoizeOptions } from "./interface";
+import invariant from "./utils/inveriant.ts";
+import { MemoizeOptions } from "./interface.ts";
 
 /**
  * Check the current configuration, if there is a problem, throw an exception

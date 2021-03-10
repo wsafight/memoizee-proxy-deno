@@ -1,4 +1,4 @@
-import { MemoizeCache } from "../interface";
+import { MemoizeCache } from "../interface.ts";
 
 export default class BaseCache<V> {
   readonly weak: boolean;

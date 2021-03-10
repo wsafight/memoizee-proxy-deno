@@ -1,5 +1,5 @@
-import { CacheMap, DisposeFun } from "../interface";
-import BaseCacheWithDispose from "./BaseCacheWithDispose";
+import { CacheMap, DisposeFun } from "../interface.ts";
+import BaseCacheWithDispose from "./BaseCacheWithDispose.ts";
 
 /**
  * To clear the data in the cache
