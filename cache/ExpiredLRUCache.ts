@@ -12,7 +12,7 @@ interface QuickLRUOptions<V> {
 
 export default class ExpiredLRUCache<V> extends BaseCacheWithDispose<V,  ExpiredCacheItem<V>> implements CacheMap<string | object, V> {
   readonly max: number
-  readonly maxAge: number
+  readonly maxAge: number = Number.MAX_VALUE
   private size: number = 0
 
   oldCacheMap: MemoizeCache<ExpiredCacheItem<V>>;

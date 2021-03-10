@@ -45,10 +45,10 @@ export function memoizee<V>(fn: TargetFun<V>, options?: MemoizeOptions<V>): Resu
       )
 
       if (!currentCache.has(cacheKey)) {
-        let result = target.apply(thisArg, argsList)
+        let result: any = target.apply(thisArg, argsList)
 
         // If it is promise, cache current promise
-        if (result?.then) {
+        if ((result as any)?.then) {
           result = Promise.resolve(result).catch(error => {
             // If there is an error, delete the current cache promise, otherwise it will cause a second error
             currentCache.delete(cacheKey)
